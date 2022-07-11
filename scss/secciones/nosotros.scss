@@ -1,0 +1,27 @@
+#nosotros{
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        background-color: $colorFondo;
+        p{
+            text-align: center;
+            margin-top: 8rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #nosotros{
+        section{
+            flex-direction: column-reverse;
+            padding: 5rem;
+            p{
+                margin-top: 5px;
+            }
+        }
+       
+    }
+}

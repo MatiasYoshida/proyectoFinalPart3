@@ -1,0 +1,30 @@
+#galeria{
+    display: grid;
+    margin: 3rem;
+    grid-template-columns: repeat(2,45vw);
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    justify-content: center;
+    justify-items: center;
+    section{
+        border-right: solid 3px $colorAzul;
+        border-bottom: solid 3px $colorAzul;
+        border-radius: 8px;
+        img{
+            width: 30vw;
+        }
+        h4,h5{
+            text-align: center;
+        }
+    }
+    @media (max-width: 450px) {
+        grid-template-columns: repeat(1,45vh);
+        section{
+            margin-bottom: 1rem;
+            img{
+                width: 80vw;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,34 @@
+header { 
+    grid-area: header;
+    nav{
+        img{
+            margin-right: 70vw;
+        }
+    }
+    .color-nav{
+        background-color: $colorAzul !important;
+        li:hover{
+            transform: scale(1.1);
+            transition: .5s;
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: .5s;
+        }
+    }
+    .img-thumbnail{
+        width: 7%;
+        background-color: $colorAzul;
+        border-color: $colorAzul;
+    }
+    .w-100{
+        width: 40% !important;
+        margin: 0 auto;
+        border-radius: 15px;
+        margin-top: 4rem;
+    }
+    .nav-link{
+        font-family: 'Rubik', sans-serif;
+    }
+    
+}

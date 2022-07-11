@@ -1,0 +1,249 @@
+footer {
+  grid-area: footer;
+  background-color: #4F7CEE;
+  background-image: linear-gradient(to bottom, #63a5f0, #4F7CEE); }
+
+#contacto section form input, #contacto section form textarea {
+  margin-bottom: 1rem;
+  border-color: #4F7CEE;
+  border-radius: 8px;
+  background-color: #ffffff; }
+
+#contacto section form #button:hover {
+  transform: scale(1.3);
+  transition: .5s; }
+
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-column-gap: 20px;
+  justify-content: center;
+  padding: 5vh; }
+  footer nav ol {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid 3px black; }
+    footer nav ol:hover {
+      transform: scale(1.3);
+      transition: .5s; }
+    footer nav ol a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none; }
+      footer nav ol a img {
+        margin: 10px;
+        width: 25px;
+        text-align: center; }
+      footer nav ol a p {
+        color: #4F7CEE; }
+
+@media (max-width: 450px) {
+  footer ol {
+    padding: 0.5rem; }
+  footer img {
+    width: 20px; }
+  footer p {
+    font-size: 8px; } }
+
+header {
+  grid-area: header; }
+  header nav img {
+    margin-right: 70vw; }
+  header .color-nav {
+    background-color: #4F7CEE !important; }
+    header .color-nav li:hover {
+      transform: scale(1.1);
+      transition: .5s; }
+    header .color-nav img:hover {
+      transform: scale(1.1);
+      transition: .5s; }
+  header .img-thumbnail {
+    width: 7%;
+    background-color: #4F7CEE;
+    border-color: #4F7CEE; }
+  header .w-100 {
+    width: 40% !important;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 4rem; }
+  header .nav-link {
+    font-family: 'Rubik', sans-serif; }
+
+#contacto {
+  grid-area: seccionContacto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: antiquewhite; }
+  #contacto section form {
+    display: flex;
+    flex-direction: column; }
+    #contacto section form textarea {
+      border-width: 2px; }
+
+@media (max-width: 450px) {
+  #contacto input {
+    width: 150px; }
+  #contacto textarea {
+    width: 150px; } }
+
+#nosotros section {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: antiquewhite; }
+  #nosotros section p {
+    text-align: center;
+    margin-top: 8rem; }
+
+@media (max-width: 450px) {
+  #nosotros section {
+    flex-direction: column-reverse;
+    padding: 5rem; }
+    #nosotros section p {
+      margin-top: 5px; } }
+
+#galeria {
+  display: grid;
+  margin: 3rem;
+  grid-template-columns: repeat(2, 45vw);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+  justify-content: center;
+  justify-items: center; }
+  #galeria section {
+    border-right: solid 3px #4F7CEE;
+    border-bottom: solid 3px #4F7CEE;
+    border-radius: 8px; }
+    #galeria section img {
+      width: 30vw; }
+    #galeria section h4, #galeria section h5 {
+      text-align: center; }
+  @media (max-width: 450px) {
+    #galeria {
+      grid-template-columns: repeat(1, 45vh); }
+      #galeria section {
+        margin-bottom: 1rem; }
+        #galeria section img {
+          width: 80vw; } }
+
+#menu {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+#grillaIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "primeraSeccion primeraSeccion primeraSeccion primeraSeccion" "segundaSeccion segundaSeccion segundaSeccion segundaSeccion" "terceraSeccion terceraSeccion terceraSeccion terceraSeccion" "footer footer footer footer"; }
+  #grillaIndex #primeraSeccion {
+    grid-area: primeraSeccion;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: antiquewhite; }
+    #grillaIndex #primeraSeccion h2 {
+      padding-bottom: 3rem; }
+    #grillaIndex #primeraSeccion div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      #grillaIndex #primeraSeccion div img {
+        width: 27vw;
+        border-radius: 25px; }
+  #grillaIndex #segundaSeccion {
+    grid-area: segundaSeccion;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: antiquewhite; }
+    #grillaIndex #segundaSeccion section {
+      display: flex;
+      justify-content: space-around;
+      background-color: #4F7CEE;
+      color: #ffffff;
+      width: 40vh;
+      height: 12rem;
+      border-radius: 25px; }
+      #grillaIndex #segundaSeccion section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #grillaIndex #segundaSeccion section div p {
+          margin: 1rem; }
+        #grillaIndex #segundaSeccion section div img {
+          background-color: #ffffff;
+          padding: 1.5rem 3rem;
+          width: 50px;
+          border-radius: 25px;
+          margin-bottom: 10px;
+          border: solid 3px black; }
+        #grillaIndex #segundaSeccion section div input {
+          width: 146px;
+          height: 23px;
+          border-radius: 25px;
+          background-color: #ffffff; }
+  #grillaIndex #terceraSeccion {
+    grid-area: terceraSeccion;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: antiquewhite; }
+    #grillaIndex #terceraSeccion h2 {
+      padding: 1rem; }
+    #grillaIndex #terceraSeccion img {
+      width: 27vw;
+      border-radius: 25px;
+      margin: 0 auto; }
+  @media (max-width: 450px) {
+    #grillaIndex #primeraSeccion {
+      grid-area: primeraSeccion;
+      display: grid;
+      grid-template-columns: auto;
+      height: 100vh;
+      margin-left: 1rem;
+      margin-right: 1rem; }
+      #grillaIndex #primeraSeccion h2 {
+        padding-bottom: 0.2rem; }
+      #grillaIndex #primeraSeccion div {
+        flex-direction: column;
+        align-items: center; }
+        #grillaIndex #primeraSeccion div img {
+          width: 40vh; }
+    #grillaIndex #segundaSeccion {
+      grid-area: segundaSeccion;
+      flex-direction: column;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      height: 60vh; }
+      #grillaIndex #segundaSeccion div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+    #grillaIndex #terceraSeccion {
+      grid-area: terceraSeccion;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      height: 25vh; }
+      #grillaIndex #terceraSeccion h2 {
+        padding: 1rem; }
+      #grillaIndex #terceraSeccion img {
+        width: 47vw; } }
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box; }
